@@ -1,0 +1,114 @@
+/* General styles for the app */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Main app container */
+.app-container {
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Space out the components */
+  padding: 40px;
+  max-width: 1200px; /* Set a max width for the app */
+  margin: 0 auto; /* Center the app horizontally */
+  gap: 40px; /* Space between the components */
+}
+
+/* Shoe List styles */
+.shoe-list {
+  flex: 0 0 65%; /* Take 65% of the width */
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Individual shoe item styles */
+.shoe-item {
+  display: flex; /* Use flex for alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between image and button */
+  padding: 15px;
+  border-bottom: 1px solid #ddd; /* Add a separator */
+}
+
+.shoe-item img {
+  max-width: 100px; /* Limit image size */
+  height: auto; /* Keep aspect ratio */
+  margin-right: 20px; /* Space between image and text */
+}
+
+.shoe-item h3 {
+  margin: 0; /* Remove default margin */
+}
+.shoe-item button {
+  width: 100px; /* Set the desired width for the Add to Cart button */
+  background-color: #28a745; /* Green background color */
+  color: #fff; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Button padding */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.shoe-item button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+/* Cart styles */
+.cart {
+  flex: 0 0 30%; /* Take 30% of the width */
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Cart item styles */
+.cart-item {
+  display: flex;
+  justify-content: space-between; /* Space between text and buttons */
+  align-items: center; /* Center items vertically */
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd; /* Add a separator */
+}
+
+/* Cart buttons */
+.cart button {
+  width: 150px; /* Set fixed width for buttons */
+  margin-left: 10px; /* Space between buttons */
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Button padding */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.cart button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+/* Total cost style */
+.cart-total {
+  font-weight: bold; /* Bold total */
+  margin-top: 10px; /* Space above total */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column; /* Stack components on smaller screens */
+    align-items: center; /* Center items */
+  }
+
+  .shoe-list,
+  .cart {
+    width: 100%; /* Full width on mobile */
+    margin-bottom: 20px; /* Space below each component */
+  }
+}

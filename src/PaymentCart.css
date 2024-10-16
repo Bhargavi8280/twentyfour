@@ -1,0 +1,104 @@
+/* PaymentPage.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+h3 {
+  align-items: center;
+  margin: 10px 0;
+}
+
+p {
+  text-align: center;
+  color: #555;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+li {
+  background-color: #fff;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.return-button {
+  width: 150px;
+  display: block;
+  margin: 20px auto;
+  background-color: #f44336;
+  color: white;
+}
+
+.return-button:hover {
+  background-color: #c62828;
+}
+.payment-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  padding: 20px; /* Add padding */
+}
+
+.items-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  width: 100%; /* Use full width */
+  max-width: 600px; /* Limit maximum width for better readability */
+}
+
+.cart-item {
+  margin: 10px 0; /* Space between items */
+  text-align: center; /* Center text */
+  border: 1px solid #ccc; /* Optional: border for items */
+  padding: 10px; /* Optional: padding for items */
+  width: 100%; /* Make items take full width of container */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+}
